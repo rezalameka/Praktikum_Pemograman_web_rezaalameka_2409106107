@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sederhana Padang - Restoran Masakan Padang Autentik</title>
+</head>
+<body>
+    <header>
+        <h1>ALAMEKA Jaya Minang</h1>
+        <p>Restoran Masakan Padang Autentik Sejak 1945</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#outlet">Lokasi Outlet</a></li>
+                <li><a href="#promo">Promo & Berita</a></li>
+                <li><a href="#pesan">Pesan Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Selamat Datang di Sederhana Padang</h2>
+            <p>Nikmati kelezatan masakan Padang tradisional dengan cita rasa autentik yang telah melegenda</p>
+        </section>
+
+        <section id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>Sederhana Padang didirikan pada tahun 1998 dengan misi melestarikan dan menyajikan masakan Padang asli kepada seluruh masyarakat Indonesia. Dengan bahan-bahan pilihan dan proses memasak yang tradisional, kami menjamin cita rasa yang autentik dalam setiap hidangan.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menu Andalan Kami</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Menu</th>
+                        <th>Deskripsi</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rendang Daging</td>
+                        <td>Daging sapi pilihan dimasak dengan bumbu rempah khas Padang</td>
+                        <td>Rp 35.000</td>
+                        <td><button>Pesan</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ayam Pop</td>
+                        <td>Ayam kampung ungkep dengan bumbu tradisional</td>
+                        <td>Rp 28.000</td>
+                        <td><button>Pesan</button></td>
+                    </tr>
+                    <tr>
+                        <td>Gulai Ikan Kakap</td>
+                        <td>Ikan kakap segar dalam kuah gulai yang gurih</td>
+                        <td>Rp 32.000</td>
+                        <td><button>Pesan</button></td>
+                    </tr>
+                    <tr>
+                        <td>Dendeng Balado</td>
+                        <td>Daging sapi iris tipis digoreng kering dengan sambal balado</td>
+                        <td>Rp 30.000</td>
+                        <td><button>Pesan</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="outlet">
+            <h2>Lokasi Outlet Kami</h2>
+            <ul>
+                <li>
+                    <h3>Sederhana Padang Cabang Jakarta Pusat</h3>
+                    <p>Jl. Sudirman No. 123, Jakarta Pusat</p>
+                    <p>Buka setiap hari: 09.00 - 21.00 WIB</p>
+                </li>
+                <li>
+                    <h3>Sederhana Padang Cabang Bandung</h3>
+                    <p>Jl. Dago No. 45, Bandung</p>
+                    <p>Buka setiap hari: 09.00 - 21.00 WIB</p>
+                </li>
+                <li>
+                    <h3>Sederhana Padang Cabang Surabaya</h3>
+                    <p>Jl. Tunjungan No. 78, Surabaya</p>
+                    <p>Buka setiap hari: 09.00 - 21.00 WIB</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="promo">
+            <h2>Promo & Berita Terbaru</h2>
+            <article>
+                <h3>Grand Opening Cabang Baru di Yogyakarta!</h3>
+                <p>Tanggal: 15 November 2023</p>
+                <p>Kami dengan bangga mengumumkan pembukaan cabang baru kami di Yogyakarta. Datang dan nikmati diskon 20% untuk semua menu selama periode opening!</p>
+            </article>
+            <article>
+                <h3>Promo Akhir Tahun - Diskon 15% untuk Pembelian di Atas Rp 150.000</h3>
+                <p>Tanggal: 1-31 Desember 2023</p>
+                <p>Rayakan akhir tahun dengan nikmatnya masakan Padang. Dapatkan diskon 15% untuk minimal pembelian Rp 150.000.</p>
+            </article>
+        </section>
+
+        <section id="pesan">
+            <h2>Pesan Sekarang - Take Away</h2>
+            <form id="order-form">
+                <fieldset>
+                    <legend>Form Pemesanan</legend>
+                    
+                    <label for="nama">Nama Pemesan:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="telepon">Nomor Telepon/WA:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                    
+                    <label for="alamat">Alamat Pengiriman:</label>
+                    <textarea id="alamat" name="alamat" required></textarea>
+                    
+                    <label for="cabang">Pilih Cabang:</label>
+                    <select id="cabang" name="cabang" required>
+                        <option value="">-- Pilih Cabang --</option>
+                        <option value="jakarta">Jakarta Pusat</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="surabaya">Surabaya</option>
+                    </select>
+                    
+                    <fieldset>
+                        <legend>Pilihan Menu:</legend>
+                        <div>
+                            <input type="checkbox" id="rendang" name="menu" value="rendang">
+                            <label for="rendang">Rendang Daging (Rp 35.000)</label>
+                            <label for="qty-rendang">Jumlah:</label>
+                            <input type="number" id="qty-rendang" name="qty-rendang" min="0" value="0">
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ayam-pop" name="menu" value="ayam-pop">
+                            <label for="ayam-pop">Ayam Pop (Rp 28.000)</label>
+                            <label for="qty-ayam-pop">Jumlah:</label>
+                            <input type="number" id="qty-ayam-pop" name="qty-ayam-pop" min="0" value="0">
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gulai-ikan" name="menu" value="gulai-ikan">
+                            <label for="gulai-ikan">Gulai Ikan Kakap (Rp 32.000)</label>
+                            <label for="qty-gulai-ikan">Jumlah:</label>
+                            <input type="number" id="qty-gulai-ikan" name="qty-gulai-ikan" min="0" value="0">
+                        </div>
+                        <div>
+                            <input type="checkbox" id="dendeng" name="menu" value="dendeng">
+                            <label for="dendeng">Dendeng Balado (Rp 30.000)</label>
+                            <label for="qty-dendeng">Jumlah:</label>
+                            <input type="number" id="qty-dendeng" name="qty-dendeng" min="0" value="0">
+                        </div>
+                    </fieldset>
+                    
+                    <label for="catatan">Catatan Tambahan:</label>
+                    <textarea id="catatan" name="catatan"></textarea>
+                    
+                    <button type="submit">Buat Pesanan & Dapatkan Kode Booking</button>
+                </fieldset>
+            </form>
+            
+            <div id="booking-result">
+                <h3>Pesanan Berhasil Dibuat!</h3>
+                <p>Kode Booking Anda: <span id="kode-booking">SBPD-1234</span></p>
+                <p>Total Pembayaran: Rp <span id="total-harga">125.000</span></p>
+                <p>Silakan hubungi kami via WhatsApp di <strong>08123456789</strong> dengan menyertakan kode booking untuk konfirmasi dan pembayaran.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Kontak Kami</h3>
+            <p>WhatsApp: 08123456789</p>
+            <p>Email: info@sederhanapadang.com</p>
+        </div>
+        
+        <div>
+            <h3>Referensi Desain</h3>
+            <p>Inspirasi desain dari:</p>
+            <ul>
+                <li><a href="https://www.sederhana.com/" target="_blank">Sederhana Restaurant</a></li>
+                <li><a href="https://www.pagaruyungresto.com/" target="_blank">Pagaruyung Resto</a></li>
+                <li><a href="https://www.parisrestaurant.co.id/" target="_blank">Paris Restaurant</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <p>&copy; 2023 Sederhana Padang. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
