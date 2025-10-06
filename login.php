@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Jika sudah login, langsung ke dashboard
+
 if (isset($_SESSION['username'])) {
     header("Location: dashboard.php");
     exit;
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = trim($_POST['password']);
 
     // Login sederhana (tanpa database)
-    if ($username === "admin" && $password === "12345") {
+    if ($username === "reja" && $password === "190806") {
         $_SESSION['username'] = $username;
         header("Location: dashboard.php");
         exit;
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ALAMEKA Jaya Minang</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
@@ -39,6 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <h2>ALAMEKA Jaya Minang</h2>
         <p>Silakan login untuk masuk ke dashboard</p>
 
+        <?php if (isset($_GET['message'])): ?>
+            <div class="info-message">
+                <?= htmlspecialchars($_GET['message']); ?>
+            </div>
+        <?php endif; ?>
+
+        <!-- Pesan error login -->
         <?php if ($error): ?>
             <div class="error-message"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
