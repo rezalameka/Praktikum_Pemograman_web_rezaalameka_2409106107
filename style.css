@@ -359,3 +359,49 @@ body.dark-mode footer a {
   color: #e63946;
 }
 
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e63946, #ff8fa3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container utama */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Kotak login */
+.login-box {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.login-box h2 {
+  color: #e63946;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-box p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
